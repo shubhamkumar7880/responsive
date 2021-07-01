@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>responsive challenge</title>
+    <style>
+      .heading {
+        color: forestgreen;
+        text-align: center;
+      }
+      .box {
+        height: 250px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        color: darkred;
+      }
+      #Name1 {
+        background-color: darkgrey;
+        padding: 20px;
+      }
+      #Name2 {
+        background-color: darksalmon;
+        padding: 20px;
+      }
+      #Name3 {
+        background-color: darkseagreen;
+        padding: 20px;
+      }
+      #Name4 {
+        background-color: antiquewhite;
+        padding: 20px;
+      }
+      @media all and (max-width: 550px) {
+        .box {
+          height: 250px;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          color: darkred;
+        }
+        @media all and (max-width: 450px) {
+        .box {
+          height: 250px;
+          display: inline;
+          color: darkred;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="heading">
+      Media Query for Columns-Increase Or Decrease The Screen Size To See The
+      Change
+    </h1>
+    <div class="box">
+      <div id="Name1">
+        <h3>Name1</h3>
+        <p>I am Subham</p>
+      </div>
+      <div id="Name2">
+        <h3>Name2</h3>
+        <p>I am Sonali</p>
+      </div>
+      <div id="Name3">
+        <h3>Name3</h3>
+        <p>I am happy</p>
+      </div>
+      <div id="Name4">
+        <h3>Name4</h3>
+        <p>I am Rahul</p>
+      </div>
+    </div>
+  </body>
+</html>
